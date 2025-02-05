@@ -34,6 +34,7 @@ Este script **no incluye sentencias de manipulación de datos** (DML) como inser
 3. Verifique que todas las tablas y relaciones se hayan creado correctamente.
 
 ##Licencia
+
 Licencia MIT
 
 Derechos de Autor (c) [2024] [Fernando Hernández]
