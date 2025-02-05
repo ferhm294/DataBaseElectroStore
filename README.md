@@ -33,8 +33,7 @@ Este script **no incluye sentencias de manipulación de datos** (DML) como inser
 2. Importe y ejecute el script SQL proporcionado para crear el esquema de la base de datos y sus relaciones.
 3. Verifique que todas las tablas y relaciones se hayan creado correctamente.
 
-##Licencia
-
+## Licencia
 Licencia MIT
 
 Derechos de Autor (c) [2024] [Fernando Hernández]
