@@ -189,3 +189,38 @@ CONSTRAINT fk_numero_factura
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 -- No especifico Engine porque en la versión de MySQL 5.5 en adelante se pone por defecto el InnoDB
+
+/* Comentario de las vistas porque esto no lo quiero incluir en el portafolio en esta sección del proyecto
+-- --------------------------
+-- Vista facturas para la base de datos
+-- Con esta vista se van a poder crear las consultas necesarias dependiendo de los requerimientos del usuario
+-- La vista incluye todos los campos necesarios de acuerdo al enunciado, cada consulta puede al utilizar las columnas incluídas en esta vista
+-- --------------------------
+
+CREATE VIEW facturas AS 
+SELECT factura.numero_factura,
+factura.fecha_emision,
+factura.fecha_entrega,
+CONCAT(empleado.nombre_empleado, ' ', empleado.apellido1_empleado, ' ', empleado.apellido2_empleado) AS empleado,
+tienda.nombre_tienda,
+factura.estado_factura,
+items_factura.cantidad_factura,
+categoria_producto.descripcion_categoria_producto,
+SUM((items_factura.cantidad_factura * producto.precio)) - factura.descuento AS total
+FROM factura
+	INNER JOIN items_factura ON factura.numero_factura = items_factura.numero_factura
+    INNER JOIN producto ON items_factura.codigo_producto = producto.codigo_producto
+    INNER JOIN categoria_producto ON producto.codigo_categoria = categoria_producto.codigo_categoria
+    INNER JOIN empleado ON factura.codigo_empleado = empleado.codigo_empleado
+    INNER JOIN tienda ON factura.codigo_tienda = tienda.codigo_tienda
+    GROUP BY factura.numero_factura,
+         factura.fecha_emision,
+         factura.fecha_entrega,
+         factura.estado_factura,
+         items_factura.cantidad_factura,
+         categoria_producto.descripcion_categoria_producto,
+         empleado.nombre_empleado,
+         empleado.apellido1_empleado,
+         empleado.apellido2_empleado,
+         tienda.nombre_tienda;
+*/
