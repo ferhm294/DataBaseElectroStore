@@ -7,11 +7,11 @@ Este proyecto consiste en la creación de una base de datos relacional para una 
 - **Base de datos**: MySQL para DDL y SQL Server para DML
 - **Entorno de desarrollo**: MySQL Workbench y SSMS
 
-- ## Ramas
+## Ramas
 - **DDL**: contiene el esquema en MySQL
 - **DML**: contiene la inserción de datos y consultas. Para esta rama se usaron insumos proporcionados por la UNED por lo que no hay un esquema en SQL Server. El modelo relacional de la base de datos es igual al de la rama DDL pero en SQL Server.
 
-- ## Licencia
+## Licencia
 Licencia MIT
 
 Derechos de Autor (c) [2024] [Fernando Hernández]
