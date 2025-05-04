@@ -7,18 +7,21 @@ La rama DML cuenta con dos proyectos que se centran en la manipulación de los d
 
 - **Proyecto 2**: contiene los queries para la población de la base de datos y un par de consultas.
 
-Sentencia 1: elimina los datos de la base de datos primero y luego se carga toda la información de la base de datos.
-Sentencia 2: consulta de todas las facturas con sus respectivos detalles.
-Sentencia 3: consulta de total de ventas por tienda.
-Sentencia 4: consulta para clientes con más de dos compras que muestra el total pagado y la cantidad de compras.
-Sentencia 5: comando de actualización de fechas de entrega para atrasar las entregas 3 días en donde la fecha de entrega y la fecha de emisión es menor a 4 días.
+- Sentencia 1: elimina los datos de la base de datos primero y luego se carga toda la información de la base de datos.
+- Sentencia 2: consulta de todas las facturas con sus respectivos detalles.
+- Sentencia 3: consulta de total de ventas por tienda.
+- Sentencia 4: consulta para clientes con más de dos compras que muestra el total pagado y la cantidad de compras.
+- Sentencia 5: comando de actualización de fechas de entrega para atrasar las entregas 3 días en donde la fecha de entrega y la fecha de emisión es menor a 4 días.
 
 - **Proyecto 3**: contiene la creación de procedimientos almacenados y funciones en la base de datos.
 
-Sentencia 1: procedimiento almacenado para insertar o realizar ventas basado en el inventario de la tienda y un conjunto de validaciones.
-Sentencia 2: función para obtener el monto total de compras por cliente en un periodo específico.
-Sentencia 3: procedimiento almacenado para actualizar productos en la base de datos.
-Sentencia 4: función que calcula el monto total del inventario de las tiendas al receibir un código de producto por parámetros.
+- Sentencia 1: procedimiento almacenado para insertar o realizar ventas basado en el inventario de la tienda y un conjunto de validaciones.
+- Sentencia 2: función para obtener el monto total de compras por cliente en un periodo específico.
+- Sentencia 3: procedimiento almacenado para actualizar productos en la base de datos.
+- Sentencia 4: función que calcula el monto total del inventario de las tiendas al receibir un código de producto por parámetros.
+
+## Tecnologías utilizadas
+La creación de estos scripts se hizo con Microsoft SQL Server Management Studio.
 
 ## Notas Adicionales
 Estos scripts **no incluye sentencias de definición de datos** (DDL). Se enfocan exclusivamente en DML.
